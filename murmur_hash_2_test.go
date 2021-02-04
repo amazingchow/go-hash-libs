@@ -16,6 +16,7 @@ func TestMurmurHash2_32(t *testing.T) {
 func TestMurmurHash2_64(t *testing.T) {
 	h := NewMurmurHash2_64()
 	if h.Sum64(text) != cgo.MurmurHash64A(text) {
+		// TODO: not worker under Linux 5.4.0-26-generic + Linux Mint 20 x86-64
 		t.Fatal("implementation of NewMurmurHash2_64 is invalid")
 	}
 }
