@@ -19,3 +19,12 @@ func MurmurHash2(key string) uint32 {
 
 	return uint32(x)
 }
+
+func MurmurHash64A(key string) uint64 {
+	ckey := C.CString(key)
+	defer C.free(unsafe.Pointer(ckey))
+
+	var x C.uint64_t = C.MurmurHash64A(unsafe.Pointer(ckey), C.int(len(key)), C.uint64_t(0xbc9f1d34))
+
+	return uint64(x)
+}
