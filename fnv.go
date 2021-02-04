@@ -14,7 +14,7 @@ func NewFnv32() Uint32Hasher {
 
 type fnv32 struct{}
 
-func (h fnv32) Sum32(key string) uint32 {
+func (f fnv32) Sum32(key string) uint32 {
 	var hash uint32 = offset32
 	for i := 0; i < len(key); i++ {
 		hash *= prime32
@@ -29,7 +29,7 @@ func NewFnv32a() Uint32Hasher {
 
 type fnv32a struct{}
 
-func (h fnv32a) Sum32(key string) uint32 {
+func (f fnv32a) Sum32(key string) uint32 {
 	var hash uint32 = offset32
 	for i := 0; i < len(key); i++ {
 		hash ^= uint32(key[i])
@@ -44,7 +44,7 @@ func NewFnv64() Uint64Hasher {
 
 type fnv64 struct{}
 
-func (h fnv64) Sum64(key string) uint64 {
+func (f fnv64) Sum64(key string) uint64 {
 	var hash uint64 = offset64
 	for i := 0; i < len(key); i++ {
 		hash *= prime64
@@ -59,7 +59,7 @@ func NewFnv64a() Uint64Hasher {
 
 type fnv64a struct{}
 
-func (h fnv64a) Sum64(key string) uint64 {
+func (f fnv64a) Sum64(key string) uint64 {
 	var hash uint64 = offset64
 	for i := 0; i < len(key); i++ {
 		hash ^= uint64(key[i])
