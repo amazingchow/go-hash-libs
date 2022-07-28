@@ -3,7 +3,7 @@ package hash
 import (
 	"testing"
 
-	"github.com/amazingchow/photon-dance-hash-lib/cgo"
+	"github.com/amazingchow/go-hash-libs/internal/cgo"
 )
 
 func TestMurmurHash2_32(t *testing.T) {

@@ -1,6 +1,6 @@
-# photon-dance-hash-lib
+# go-hash-libs
 
-The library implements various non-crypto hash functions.
+To implement various non-crypto hash functions.
 
 ## Contributing
 
@@ -14,7 +14,7 @@ The library implements various non-crypto hash functions.
 
 ### Step 3
 
-* 🔃 Create a new PR using https://github.com/amazingchow/photon-dance-hash-lib/compare!
+* 🔃 Create a new PR using https://github.com/amazingchow/go-hash-libs/compare!
 
 ## Support
 
