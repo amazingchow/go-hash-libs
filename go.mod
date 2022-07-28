@@ -1,3 +1,3 @@
-module github.com/amazingchow/photon-dance-hash-lib
+module github.com/amazingchow/go-hash-libs
 
 go 1.15
